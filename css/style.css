@@ -1,7 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+/* MOBILE DISPLAY */
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fbd6e1;
+    padding: 15px;
+}
+
+@media (min-width: 600px) {
+    .about-content{
+        flex-direction: row;
+    }
+}
+
 /* GENERAL & GLOBAL STYLES */
 body {
     font-family: 'Georgia', serif;
     margin: 0;
+    padding: 0;
     background: #fff0f5;
     color: #3a2c2c;
   }
@@ -9,6 +29,7 @@ body {
 /* NAVIGATION BAR */
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     background: #e2c1d4;
@@ -143,6 +164,7 @@ nav {
 /* GALLERY SECTION */
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     margin: 30px 0;
@@ -173,4 +195,84 @@ footer.guide {
     margin-top: 10px;
     font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+  
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+  
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+  
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+  
+    .hero-banner {
+        border-bottom: none;
+    }
+  
+    .site-title {
+        font-size: 2.5rem;
+        margin-top: -50px;
+    }
+  
+    .site-tagline {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+  
+    .search-box input {
+        width: 80%;
+    }
+  
+    .about {
+        padding: 15px;
+    }
+  
+    .about-content {
+        flex-direction: column; /* Stack text and image */
+        align-items: center;
+    }
+  
+    .about-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+  
+    .news {
+        max-width: 90%;
+        font-size: 14px;
+    }
+  
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .gallery img {
+        width: 80%;
+        max-width: 250px;
+    }
+  
+    footer.guide {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+  
+    .footer-icon {
+        text-align: center;
+        margin-top: 20px;
+    }
+  
+  }
   
