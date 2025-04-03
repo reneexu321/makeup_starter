@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (e) {
             e.stopPropagation(); // Prevents window click from closing it instantly
             closeAllDropdowns(); // Closes others
+
+            console.log("Clicked:", this.innerText); // added 
     
             const dropdown = this.nextElementSibling;
             if (dropdown && dropdown.classList.contains("dropdown-content")) {
