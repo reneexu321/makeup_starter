@@ -11,11 +11,14 @@
     padding: 15px;
 }
 
-@media (min-width: 600px) {
-    .about-content{
-        flex-direction: row;
+
+@media screen and (min-width: 601px) {
+    .dropdown-content {
+      position: absolute;
+      width: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-}
+} 
 
 /* GENERAL & GLOBAL STYLES */
 body {
@@ -24,24 +27,26 @@ body {
     padding: 0;
     background: #fff0f5;
     color: #3a2c2c;
-  }
+}
   
 /* NAVIGATION BAR */
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 1rem;
     background: #e2c1d4;
     padding: 15px;
 }
 
 /* DROPDOWN */
+
+
 .dropdown { /* Dropdown container */
     position: relative;
     display: inline-block;
 }
-  
+
 .dropbtn { /* Button style */
     background-color: #e2c1d4;
     color: #4b2c36;
@@ -57,9 +62,9 @@ nav {
     position: absolute;
     background-color: #fffbe7;
     min-width: 160px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    z-index: 1;
+    z-index: 10;
 }
   
 .dropdown-content a { /* Dropdown links */
@@ -70,13 +75,14 @@ nav {
     font-size: 14px;
 }
   
-.dropdown-content a:hover { /* Hover effect */
-    background-color: #fce9f1;
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
 }
-  
-.show { /* Show dropdown on hover (optional for desktop) */
-    display: block !important;
+
+.dropdown-content.show {
+    display: block;
 }
+
   
 /* HERO SECTION (Banner + Title + Tagline) */
 .hero-banner {
@@ -87,19 +93,25 @@ nav {
 }
   
 .site-title {
+    position: absolute;
+    top: 0px;
+    left: 20px;
     font-size: 4rem;
     font-family: 'Cinzel Decorative', cursive;
     color: white;
     text-shadow: 0 0 8px #eab9e1;
-    margin-top: -100px;
-    position: relative;
     z-index: 2;
+    margin: 0; /* Clear default margin if needed */
 }
   
 .site-tagline {
+    position: absolute;
+    top: 90px; /* adjust based on title font size */
+    left: 20px;
     font-size: 1.2rem;
     color: #964f80;
-    margin-top: -10px;
+    margin: 0;
+    z-index: 2;
 }
   
 /* SEARCH BAR */
@@ -194,7 +206,7 @@ footer.guide {
     text-align: right;
     margin-top: 10px;
     font-size: 14px;
-}
+} 
 
 @media screen and (max-width: 600px) {
   
@@ -275,4 +287,3 @@ footer.guide {
     }
   
   }
-  

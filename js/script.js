@@ -1,5 +1,5 @@
 // Run this once the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle search logic
     function search() {
@@ -19,14 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Toggle the clicked dropdown
     document.querySelectorAll(".dropbtn").forEach(button => {
-        button.addEventListener("click", function (e) {
-            e.stopPropagation(); // Prevents window click from closing it instantly
-            closeAllDropdowns(); // Closes others
-
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeAllDropdowns();
             console.log("Clicked:", this.innerText); // added 
-    
             const dropdown = this.nextElementSibling;
-            if (dropdown && dropdown.classList.contains("dropdown-content")) {
+            if (dropdown && dropdown.classList.contains("dropdown-content")){
                 dropdown.classList.toggle("show");
             }
         });
@@ -38,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
     function closeAllDropdowns() {
-        document.querySelectorAll(".dropdown-content").forEach(menu => {
-            menu.classList.remove("show");
+        document.querySelectorAll(".dropdown-content.show").forEach(dropdown => {
+            dropdown.classList.remove("show");
         });
     }
-});
+// });
