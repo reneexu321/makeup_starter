@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miroire</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav>
+      <button class="nav-icon">ICON</button>
+      <div class="dropdown"><div class="dropbtn">-Home-</div></div>
+      <div class="dropdown">
+        <div class="dropbtn">-Blog-</div>
+        <ul class="dropdown-content">
+          <li>Create</li>
+          <li>Discover</li>
+        </ul>
+      </div>
+      <div class="dropdown"><div class="dropbtn">-Contact-</div></div>
+    </nav>
+
+    <div class="hero">
+      <img class="hero-banner" src="images/your-banner-image.jpg" alt="Miroire Banner">
+      <h1 class="site-title">Miroire</h1>
+      <h2 class="site-tagline"><em>Start searching your makeup here:</em></h2>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search your makeup">
+        <button onclick="search()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <section class="about">
+        <h3 class="fancy-header">❧ About Us! ❧</h3>
+        <div class="about-content">
+          <div class="text">
+            Are you feeling stumped on how to use your makeup? Or do you have a pile of unused products?
+            We are <strong>Miroire</strong>, here to provide a guide on your makeup products old and new!
+            Through our database, you can learn about ideal color combinations, beauty tools, and more on making the best look with your item!<br><br>
+            Start now by searching your makeup item above!
+          </div>
+          <img src="images/flower-hand.jpg" alt="About Image">
+        </div>
+      </section>
+
+      <aside class="news">
+        <h3>News and Announcements</h3>
+        <p><strong>04/02/25</strong></p>
+        <p>Website launched!</p>
+      </aside>
+
+      <section class="gallery">
+        <img src="images/gallery1.jpg" alt="Look 1">
+        <img src="images/gallery2.jpg" alt="Look 2">
+        <img src="images/gallery3.jpg" alt="Look 3">
+      </section>
+    </div>
+
+    <footer class="guide">
+      <h4>Guide •ೃ✧⁺˖</h4>
+      <ol>
+        <li><strong>Search</strong> your product name as <em>accurate</em> as possible into the main search bar.</li>
+        <li>Find your makeup item in the <strong>results</strong> page and click on the <em>image</em>.</li>
+        <li>Receive information on your product to guide you to an ideal look! Scroll through <strong>recommended products</strong> that pair well with your own.</li>
+      </ol>
+      <div class="footer-icon">icon</div>
+    </footer>
+  </main>
+</body>
+</html>
