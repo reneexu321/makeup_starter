@@ -1,6 +1,4 @@
-/* ------------------------------------ */
 /* GENERAL & GLOBAL STYLES */
-/* ------------------------------------ */
 body {
     font-family: 'Georgia', serif;
     margin: 0;
@@ -8,33 +6,66 @@ body {
     color: #3a2c2c;
   }
   
-  /* ------------------------------------ */
-  /* NAVIGATION BAR */
-  /* ------------------------------------ */
-  nav {
+/* NAVIGATION BAR */
+nav {
     display: flex;
     justify-content: center;
     gap: 25px;
     background: #e2c1d4;
     padding: 15px;
-  }
+}
+
+/* DROPDOWN */
+.dropdown { /* Dropdown container */
+    position: relative;
+    display: inline-block;
+}
   
-  .dropbtn {
+.dropbtn { /* Button style */
+    background-color: #e2c1d4;
+    color: #4b2c36;
+    padding: 10px 20px;
+    border: none;
     font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
-  }
+}
   
-  /* ------------------------------------ */
-  /* HERO SECTION (Banner + Title + Tagline) */
-  /* ------------------------------------ */
-  .hero-banner {
+.dropdown-content { /* Dropdown menu style */
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #fffbe7;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+  
+.dropdown-content a { /* Dropdown links */
+    color: #333;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+  
+.dropdown-content a:hover { /* Hover effect */
+    background-color: #fce9f1;
+}
+  
+.show { /* Show dropdown on hover (optional for desktop) */
+    display: block !important;
+}
+  
+/* HERO SECTION (Banner + Title + Tagline) */
+.hero-banner {
     width: 100%;
     height: auto;
     display: block;
     border-bottom: 5px solid #ddb6d9;
-  }
+}
   
-  .site-title {
+.site-title {
     font-size: 4rem;
     font-family: 'Cinzel Decorative', cursive;
     color: white;
@@ -42,114 +73,104 @@ body {
     margin-top: -100px;
     position: relative;
     z-index: 2;
-  }
+}
   
-  .site-tagline {
+.site-tagline {
     font-size: 1.2rem;
     color: #964f80;
     margin-top: -10px;
-  }
+}
   
-  /* ------------------------------------ */
-  /* SEARCH BAR */
-  /* ------------------------------------ */
-  .search-box {
+/* SEARCH BAR */
+.search-box {
     margin: 10px auto;
     text-align: center;
-  }
+}
   
-  .search-box input {
+.search-box input {
     padding: 8px;
     width: 250px;
     border: 2px solid #e4b7d8;
     border-radius: 8px;
-  }
+}
   
-  .search-box button {
+.search-box button {
     padding: 8px;
     background-color: #e4b7d8;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-  }
+}
   
-  /* ------------------------------------ */
-  /* ABOUT SECTION */
-  /* ------------------------------------ */
-  .about {
+/* ABOUT SECTION */
+.about {
     background-color: #fff8dc;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     border: 3px double #d3b2d1;
     border-radius: 10px;
-  }
+}
   
-  .fancy-header {
+.fancy-header {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Georgia', cursive;
-  }
+}
   
-  .about-content {
+.about-content {
     display: flex;
     gap: 20px;
-  }
+}
   
-  .about-content img {
+.about-content img {
     width: 200px;
     border-radius: 10px;
     border: 2px solid #ccc;
-  }
+}
   
-  /* ------------------------------------ */
-  /* NEWS / ANNOUNCEMENTS */
-  /* ------------------------------------ */
-  .news {
+/* NEWS / ANNOUNCEMENTS */
+.news {
     background-color: #fef1e8;
     padding: 20px;
     margin: 20px auto;
     max-width: 400px;
     border: 1px dashed #b97c9e;
     border-radius: 10px;
-  }
+}
   
-  /* ------------------------------------ */
-  /* GALLERY SECTION */
-  /* ------------------------------------ */
-  .gallery {
+/* GALLERY SECTION */
+.gallery {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin: 30px 0;
-  }
+}
   
-  .gallery img {
+.gallery img {
     width: 120px;
     height: auto;
     border-radius: 8px;
     border: 1px solid #aaa;
-  }
+}
   
-  /* ------------------------------------ */
-  /* FOOTER GUIDE SECTION */
-  /* ------------------------------------ */
-  footer.guide {
+/* FOOTER GUIDE SECTION */
+footer.guide {
     background: #dcb8e3;
     color: #2e2e2e;
     padding: 20px;
     border-top: 5px solid #d9a9c4;
     font-size: 0.95rem;
-  }
+}
   
-  .guide ol {
+.guide ol {
     padding-left: 20px;
-  }
+}
   
-  .footer-icon {
+.footer-icon {
     text-align: right;
     margin-top: 10px;
     font-size: 14px;
-  }
+}
   
