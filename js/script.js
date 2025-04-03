@@ -1,21 +1,13 @@
-document.querySelectorAll('.dropbtn').forEach(button => {
-    button.addEventListener('click', () => {
-        const dropdown = button.nextElementSibling;
-        dropdown.classList.toggle('show');
-    });
-});
-
-// close dropdowns when clicking outside
-window.addEventListener('click', e=> {
-    if (!e.target.matches('.dropbtn')) {
-        document.querySelectorAll('.dropdown-content').forEach(drop => {
-            drop.classList.remove('show');
-        });
-    }
-});
-
-
+// Function to handle search logic
 function search() {
-    const input = document.getElementById("searchInput").ariaValueMax;
-    alert("You searched for: " + input);
+    const input = document.getElementById("searchInput").value.trim();
+  
+    // If the input is empty, alert the user
+    if (input === "") {
+      alert("Please enter a search term.");
+    } else {
+      // Otherwise, show the searched text
+      alert("You searched for: " + input);
+    }
 }
+  

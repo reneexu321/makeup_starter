@@ -3,56 +3,86 @@
 <head>
     <meta charset="UTF-8">  <!--universal translator-->
 
-    <title>Page Title</title> <!--title of webpage-->
+    <title>Miroire</title> <!--title of webpage-->
 
     <meta name="viewport" content="width=device-width,intial-scale=1"> <!--fit device screen size-->
 
     <link rel="stylesheet" href="css/style.css"> <!--link to external CSS file: replace "name" with CSS file name (like "style.css")-->
 
-    <script src="js/script.js"></script> <!--link to external JavaScript file: replace "name" with JS file name (like "script.js")-->
+    <script defer src="js/script.js"></script> <!--link to external JavaScript file: replace "name" with JS file name (like "script.js")-->
 </head>
 <!--main content of webpage (what users see)-->
 <body>
     <header>
         <nav>
-            <button>ICON</button>
-            <div class="dropdown">-Home-</div>
-            <div class="dropdown">-Blog-
-                <ul>
-                    <li>Create</li>
-                    <li>Discover</Li>
+            <button class="nav-icon">ICON</button>
+            <!-- Navigation Dropdowns -->
+            <div class="dropdown"><div class="dropbtn">-Home-</div></div>
+            <div class="dropdown">
+                <div class="dropbtn">-Blog-</div>
+                <ul class="dropdown-content">
+                  <li>Create</li>
+                  <li>Discover</li>
                 </ul>
-            </div>
-            <div class="dropdown">-Contact-</div>
+              </div>
+              <div class="dropdown"><div class="dropbtn">-Contact-</div></div>
         </nav>
-        <h1>Website Name</h1>
-        <h2><em>Start searching your makeup here:</em></h2>
-        <input type="text" id="searchInput" placeholder="Search your makeup">
-        <button onclick="search()">Search</button>
-    </header>
-    <main>
-        <section class="about">
-            <h3>About Us!</h3>
-            <div class="about-content">
-                <div class="text">Enter text here.</div>
-                <img src="image-placeholder.png" alt="About Image">
+        <!-- Hero Section -->
+        <div class="hero">
+            <img class="hero-banner" src="images/your-banner-image.jpg" alt="Miroire Banner"> <!-- Banner image -->
+            <h1 class="site-title">Miroire</h1> <!-- Site Title -->
+            <h2 class="site-tagline"><em>Start searching your makeup here:</em></h2> <!-- Tagline -->
+  
+            <!-- Search Bar -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search your makeup">
+                <button onclick="search()">Search</button>
             </div>
-        </section>
-        <aside class="news">
-            <h3>News and Announcements</h3>
-            <p><strong>mm/dd/yy</strong></p>
-            <p>Enter text here.</p>
-        </aside>
-        <section class="gallery">
-            <img src="img1.png">
-            <img src="img2.png">
-            <img src="img3.png">
-        </section>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="main-content">
+            <!-- 📖 About Section -->
+            <section class="about">
+                <h3 class="fancy-header">❧ About Us! ❧</h3>
+                <div class="about-content">
+                    <div class="text">
+                        Are you feeling stumped on how to use your makeup? Or do you have a pile of unused products?
+                        We are <strong>Miroire</strong>, here to provide a guide on your makeup products old and new!
+                        Through our database, you can learn about ideal color combinations, beauty tools, and more on making the best look with your item!<br><br>
+                        Start now by searching your makeup item above!
+                    </div>
+                    <img src="images/flower-hand.jpg" alt="About Image"> <!-- About image -->
+                </div>
+            </section>
 
+            <!-- 🗞️ News Sidebar -->
+            <aside class="news">
+                <h3>News and Announcements</h3>
+                <p><strong>04/02/25</strong></p>
+                <p>Website launched!</p>
+            </aside>
+
+            <!-- 🎨 Gallery -->
+            <section class="gallery">
+                <img src="images/gallery1.jpg" alt="Look 1">
+                <img src="images/gallery2.jpg" alt="Look 2">
+                <img src="images/gallery3.jpg" alt="Look 3">
+            </section>
+        </div>
+
+        <!-- Footer Guide -->
+        <footer class="guide">
+            <h4>Guide •ೃ✧⁺˖</h4>
+            <ol>
+                <li><strong>Search</strong> your product name as <em>accurate</em> as possible into the main search bar.</li>
+                <li>Find your makeup item in the <strong>results</strong> page and click on the <em>image</em>.</li>
+                <li>Receive information on your product to guide you to an ideal look! Scroll through <strong>recommended products</strong> that pair well with your own.</li>
+            </ol>
+            <div class="footer-icon">icon</div>
+        </footer>
     </main>
-    <div class="class name"> 
-        <!--content here-->
-    </div>
 </body>
-
 </html>

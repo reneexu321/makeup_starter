@@ -1,77 +1,155 @@
-/*GENERAL*/
+/* ------------------------------------ */
+/* GENERAL & GLOBAL STYLES */
+/* ------------------------------------ */
 body {
-    margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #fff0f5; /* Light pink*/
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(#fbd6e1, #e6f2fb);
-    text-align: center;
-    padding: 20px;
-}
-   
-
-/* NAVIGATION AND DROPDOWN */
-nav {
+    margin: 0;
+    background: #fff0f5;
+    color: #3a2c2c;
+  }
+  
+  /* ------------------------------------ */
+  /* NAVIGATION BAR */
+  /* ------------------------------------ */
+  nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background-color: #f2c1cc;
-    padding: 10px;
-}
-.dropdown ul {
-    display: none;
-    list-style: none;
-    padding: 0;
-    background: #fffbe7;
-    position: absolute;
-}
-.dropdown:hover ul {
+    gap: 25px;
+    background: #e2c1d4;
+    padding: 15px;
+  }
+  
+  .dropbtn {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* ------------------------------------ */
+  /* HERO SECTION (Banner + Title + Tagline) */
+  /* ------------------------------------ */
+  .hero-banner {
+    width: 100%;
+    height: auto;
     display: block;
-}
-
-
-/* ABOUT SECTION */
-.about {
+    border-bottom: 5px solid #ddb6d9;
+  }
+  
+  .site-title {
+    font-size: 4rem;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    text-shadow: 0 0 8px #eab9e1;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .site-tagline {
+    font-size: 1.2rem;
+    color: #964f80;
+    margin-top: -10px;
+  }
+  
+  /* ------------------------------------ */
+  /* SEARCH BAR */
+  /* ------------------------------------ */
+  .search-box {
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    width: 250px;
+    border: 2px solid #e4b7d8;
+    border-radius: 8px;
+  }
+  
+  .search-box button {
+    padding: 8px;
+    background-color: #e4b7d8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* ------------------------------------ */
+  /* ABOUT SECTION */
+  /* ------------------------------------ */
+  .about {
     background-color: #fff8dc;
     padding: 20px;
-}
-.about-content {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 3px double #d3b2d1;
+    border-radius: 10px;
+  }
+  
+  .fancy-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Georgia', cursive;
+  }
+  
+  .about-content {
     display: flex;
-    background-color: #fbd6e1;
-    padding: 10px;
-}
-.about-content .text {
-    flex: 2;
-}
-.about-content img {
-    flex: 1;
-    width: 100%;
-}
-
-/* NEWS */
-.news {
+    gap: 20px;
+  }
+  
+  .about-content img {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+  
+  /* ------------------------------------ */
+  /* NEWS / ANNOUNCEMENTS */
+  /* ------------------------------------ */
+  .news {
     background-color: #fef1e8;
     padding: 20px;
-    float: right;
-    width: 30%;
-}
-
-/* GALLERY */
-
-.gallery {
+    margin: 20px auto;
+    max-width: 400px;
+    border: 1px dashed #b97c9e;
+    border-radius: 10px;
+  }
+  
+  /* ------------------------------------ */
+  /* GALLERY SECTION */
+  /* ------------------------------------ */
+  .gallery {
     display: flex;
     gap: 10px;
-    padding: 20px;
-}
-.gallery img {
-    width: 100px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .gallery img {
+    width: 120px;
     height: auto;
-}
-
-/* VISIBILITY CONTROL */
-.show {
-    display: block !important;
-}
+    border-radius: 8px;
+    border: 1px solid #aaa;
+  }
+  
+  /* ------------------------------------ */
+  /* FOOTER GUIDE SECTION */
+  /* ------------------------------------ */
+  footer.guide {
+    background: #dcb8e3;
+    color: #2e2e2e;
+    padding: 20px;
+    border-top: 5px solid #d9a9c4;
+    font-size: 0.95rem;
+  }
+  
+  .guide ol {
+    padding-left: 20px;
+  }
+  
+  .footer-icon {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
