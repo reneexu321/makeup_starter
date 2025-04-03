@@ -32,7 +32,7 @@ nav {
 }
   
 .dropdown-content { /* Dropdown menu style */
-    display: none; /* Hidden by default */
+    display: none; /* hidden by default */
     position: absolute;
     background-color: #fffbe7;
     min-width: 160px;
