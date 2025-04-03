@@ -1,9 +1,11 @@
+/*GENERAL*/
 body {
     margin: 0;
     font-family: 'Georgia', serif;
     background-color: #fff0f5; /* Light pink*/
 }
 
+/* HEADER */
 header {
     background: linear-gradient(#fbd6e1, #e6f2fb);
     text-align: center;
@@ -69,7 +71,7 @@ nav {
     height: auto;
 }
 
-/* DROPDOWN */
+/* VISIBILITY CONTROL */
 .show {
     display: block !important;
 }
