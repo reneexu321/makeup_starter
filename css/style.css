@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fff0f5; /* Light pink*/
+}
+
+header {
+    background: linear-gradient(#fbd6e1, #e6f2fb);
+    text-align: center;
+    padding: 20px;
+}
+   
+
+/* NAVIGATION AND DROPDOWN */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f2c1cc;
+    padding: 10px;
+}
+.dropdown ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background: #fffbe7;
+    position: absolute;
+}
+.dropdown:hover ul {
+    display: block;
+}
+
+
+/* ABOUT SECTION */
+.about {
+    background-color: #fff8dc;
+    padding: 20px;
+}
+.about-content {
+    display: flex;
+    background-color: #fbd6e1;
+    padding: 10px;
+}
+.about-content .text {
+    flex: 2;
+}
+.about-content img {
+    flex: 1;
+    width: 100%;
+}
+
+/* NEWS */
+.news {
+    background-color: #fef1e8;
+    padding: 20px;
+    float: right;
+    width: 30%;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100px;
+    height: auto;
+}
+
+/* DROPDOWN */
+.show {
+    display: block !important;
+}
