@@ -18,7 +18,7 @@
     window.search = search;
 
     // Toggle the clicked dropdown
-    document.querySelectorAll(".dropbtn").forEach(button => {
+    document.querySelectorAll(".dropdown > button").forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
             closeAllDropdowns();
