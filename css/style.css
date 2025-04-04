@@ -11,14 +11,41 @@
     padding: 15px;
 }
 
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 6px rgba(255, 200, 240, 0.4)); }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 200, 240, 0.8)); }
+    100% { filter: drop-shadow(0 0 6px rgba(255, 200, 240, 0.4)); }
+}
 
-@media screen and (min-width: 601px) {
-    .dropdown-content {
-      position: absolute;
-      width: auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-} 
+/*
+.site-title-text {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #f6d4f2,
+      0 0 15px #eab9e1,
+      0 0 20px #e4a9dc;
+}
+*/
+
+.site-title-img {
+    display: block;
+    margin: -60px auto 10px auto; /* adjust spacing as needed */
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(255, 200, 240, 0.6);
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: glow 2.5s infinite ease-in-out;
+    pointer-events: none;
+}
 
 /* GENERAL & GLOBAL STYLES */
 body {
@@ -41,6 +68,7 @@ nav {
 .nav-left {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .nav-right {
@@ -50,16 +78,16 @@ nav {
 }
 
 .nav-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
 }
 
 .nav-left img.nav-icon {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -124,6 +152,10 @@ nav {
     height: auto;
     display: block;
     border-bottom: 5px solid #ddb6d9;
+}
+
+.hero {
+    position: relative;
 }
   
 .site-title {
@@ -391,9 +423,9 @@ footer.guide {
     }
   
     .dropdown-content {
-        position: static;
-        width: 100%;
-        box-shadow: none;
+        position: absolute;
+          width: auto;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .hero-banner {
