@@ -249,7 +249,7 @@ nav {
     margin: 1.5em auto; 
     text-align: center;
     font-family: 'Great Vibes', cursive, sans-serif !important; 
-    color: #9B7386; /* a soft mauve */
+    color: #a14f73; /* a soft mauve */
     background: linear-gradient(to right, #F8ECEF, #FDF1F3) !important;
     padding: 2em;
     border-radius: 8px;
@@ -407,7 +407,7 @@ nav {
   
 /* FOOTER GUIDE SECTION */
 footer.guide {
-    background-color: #ebd8d8;       /* Light pink background */
+    background-color: #fce8f1;       /* Light pink background */
     color: #2e2e2e;                 /* Dark gray text color */
     padding: 20px;                  /* Spacing inside the footer */
     border-top: none;  /* Thicker pink top border */
@@ -438,7 +438,7 @@ footer.guide {
 .guide ol li {
     margin-bottom: 0.5rem;   /* Spacing between steps */
     line-height: 1.4;        /* Comfortable line spacing */
-    color: #6b584c;
+    color: #a14f73;
 }
   
 .footer-icon {
