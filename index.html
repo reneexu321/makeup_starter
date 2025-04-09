@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
     <script defer src="js/script.js"></script> <!--link to external JavaScript file: replace "name" with JS file name (like "script.js")-->
 
 </head>
@@ -74,12 +76,16 @@
             <img class="hero-banner" src="images/title-banner.png" alt="Miroire Banner"> <!-- Banner image -->
         </div>
         <div class="search-container">
-            <h2 class="site-tagline"><em>Start searching your makeup here:</em></h2>
-            <!-- Search Bar -->
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search your makeup">
-                <button onclick="search()">Search</button>
-            </div>
+            <h2>Start searching your makeup here:</h2>
+            <form>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search your makeup..."
+                aria-label="Search your makeup"
+              />
+              <button type="submit" class="search-btn">Search</button>
+            </form>
         </div>
     </header>
     
