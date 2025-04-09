@@ -302,7 +302,7 @@ nav {
 .about {
     background: linear-gradient(to bottom, #fff8dc, #fce8f1);
     padding: 3px;
-    margin: 40px ;
+    margin: 0px 40px 40px 40px;
     max-width: 600px;
     border: 3px solid #d3b2d1;
     border-radius: 0px;
