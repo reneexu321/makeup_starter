@@ -207,7 +207,7 @@ nav {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 5px solid #ddb6d9;
+    border-bottom: 5px solid #CE9CB7;
 }
 
 .hero {
@@ -246,7 +246,7 @@ nav {
 /* SEARCH BAR */
 .search-container {
     max-width: 800px; 
-    margin: 3em auto; 
+    margin: 1.5em auto; 
     text-align: center;
     font-family: 'Great Vibes', cursive, sans-serif !important; 
     color: #9B7386; /* a soft mauve */
@@ -256,7 +256,7 @@ nav {
 }
 
 .search-container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1em;
 }
 
@@ -305,7 +305,7 @@ nav {
     margin: 40px ;
     max-width: 600px;
     border: 3px solid #d3b2d1;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: visible;
@@ -319,7 +319,7 @@ nav {
     color: #5a3c2d;
     background: #fff4d6;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 0 12px rgba(255, 230, 200, 0.6);
     text-shadow: 1px 1px 3px rgba(80, 50, 40, 0.2);
 }
@@ -352,13 +352,13 @@ nav {
     width: 100%; 
     height: auto;
     filter: drop-shadow(0 0 6px rgba(90, 60, 40, 0.3));
-    border-radius: 10px 10px 0 0;
+    border-radius: 0px 0px 0 0;
 }
   
 .about-content img {
     flex: 1;
     max-width: 200px;
-    border-radius: 10px;
+    border-radius: 0px;
     border: none;
     box-shadow: none;
     object-fit: cover;
@@ -380,14 +380,14 @@ nav {
 }
   
 /* NEWS / ANNOUNCEMENTS */
-.news {
+/* .news {
     background-color: #fef1e8;
     padding: 20px;
     margin: 20px auto;
     max-width: 400px;
     border: 1px dashed #b97c9e;
-    border-radius: 10px;
-}
+    border-radius: 0px;
+} */
   
 /* GALLERY SECTION */
 .gallery {
@@ -401,16 +401,16 @@ nav {
 .gallery img {
     width: 120px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0px;
     border: 1px solid #aaa;
 }
   
 /* FOOTER GUIDE SECTION */
 footer.guide {
-    background-color: #fce8f1;       /* Light pink background */
+    background-color: #ebd8d8;       /* Light pink background */
     color: #2e2e2e;                 /* Dark gray text color */
     padding: 20px;                  /* Spacing inside the footer */
-    border-top: 5px solid #d9a9c4;  /* Thicker pink top border */
+    border-top: none;  /* Thicker pink top border */
     font-size: 0.95rem;             /* Relative text size */
     /* If you need to center it or limit width: 
        max-width: 1200px; 
@@ -423,6 +423,9 @@ footer.guide {
     margin-bottom: 1rem;     /* Space below the heading */
     font-size: 1.1rem;       /* Slightly larger than body text */
     font-weight: bold;       /* Make sure it stands out */
+    background-color: #b88ea2;
+    color: #fffdf5;
+    padding: 5px;
 }
 
 
@@ -435,6 +438,7 @@ footer.guide {
 .guide ol li {
     margin-bottom: 0.5rem;   /* Spacing between steps */
     line-height: 1.4;        /* Comfortable line spacing */
+    color: #6b584c;
 }
   
 .footer-icon {
@@ -448,7 +452,7 @@ footer.guide {
     flex: 1;
     padding: 20px;
     border: 1px dashed #b97c9e;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: url("images/plaid-news.png");*/
     background-size: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
