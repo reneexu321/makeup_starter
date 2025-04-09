@@ -277,10 +277,10 @@ nav {
 /* ABOUT SECTION */
 .about {
     background: linear-gradient(to bottom, #fff8dc, #fce8f1);
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 800px;
-    border: 3px double #d3b2d1;
+    padding: 3px;
+    margin: 40px ;
+    max-width: 600px;
+    border: 3px solid #d3b2d1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -342,14 +342,17 @@ nav {
 }
 
 .about::after {
+    position: absolute;
     content: '';
     width: 100%;
     display: block;
-    height: 50px;
+    height: 40px;
     background-image: url("../images/lace.png");
     background-repeat: repeat-x;
     background-size: contain;
-    margin-top: 20px;
+    bottom: -41px; /* shift it down 10px (adjust as needed) */
+    /* or top: 0; margin-top: -20px; if you want it coming out the top... */
+    z-index: 1; /* Ensure it's on top or behind, depending on your design */
 }
   
 /* NEWS / ANNOUNCEMENTS */
@@ -380,15 +383,34 @@ nav {
   
 /* FOOTER GUIDE SECTION */
 footer.guide {
-    background: #dcb8e3;
-    color: #2e2e2e;
-    padding: 20px;
-    border-top: 5px solid #d9a9c4;
-    font-size: 0.95rem;
+    background-color: #fce8f1;       /* Light pink background */
+    color: #2e2e2e;                 /* Dark gray text color */
+    padding: 20px;                  /* Spacing inside the footer */
+    border-top: 5px solid #d9a9c4;  /* Thicker pink top border */
+    font-size: 0.95rem;             /* Relative text size */
+    /* If you need to center it or limit width: 
+       max-width: 1200px; 
+       margin: 0 auto; 
+    */
 }
   
+.guide h2 {
+    margin-top: 0;           /* Remove default top margin */
+    margin-bottom: 1rem;     /* Space below the heading */
+    font-size: 1.1rem;       /* Slightly larger than body text */
+    font-weight: bold;       /* Make sure it stands out */
+}
+
+
 .guide ol {
-    padding-left: 20px;
+    margin: 0;               /* Reset default margin */
+    padding-left: 20px;      /* Indent so numbers aren’t flush left */
+    list-style-type: decimal;/* Standard numeric list */
+}
+
+.guide ol li {
+    margin-bottom: 0.5rem;   /* Spacing between steps */
+    line-height: 1.4;        /* Comfortable line spacing */
 }
   
 .footer-icon {
